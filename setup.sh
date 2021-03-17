@@ -2,7 +2,7 @@ echo "Running apt update"
 sudo apt update
 
 echo "Installing utilities" 
-sudo DEBIAN_FRONTEND=noninteractive apt install build-essential wget curl git zip unzip -y
+sudo DEBIAN_FRONTEND=noninteractive apt install build-essential python wget curl git zip unzip -y
 
 echo "Add Erlang Solutions repository"
 wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
